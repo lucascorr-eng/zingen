@@ -1,0 +1,101 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* uma das boas práticas do css moderno */
+/* o after e o before é para aplicar nos pseudo elementos  */
+
+
+/* CSS RESET */
+* {
+  /* margin: 0;
+  padding: 0; */
+  font: inherit; /*vai tirar todos os estilos da fonte - um css reset para fonts */
+
+  -webkit-font-smoothing: antialiased;  /* suaviza as fontes, as bordas das fontes, deixa o texto menos grosso */
+  /* o webkit é préfixo de motor de renderização de navegadores */
+  -moz-osx-font-smoothing: grayscale; /* para o mozila */
+}
+
+
+/* VARIÁVEIS DO CSS */
+:root{
+    /* colors */
+  /* produto */
+  --brand-gradient: linear-gradient(90deg, #FC4A1A, #F7B733);
+  --brand-color-primary: #F7B733;
+  --brand-color-secondary: #FC4A1A;
+
+  /* base */
+  --background-color: #09090B;
+  --surface-color: #18181B;
+  --stroke-color: #27272A;
+  --text-color-secondary: #A1A1AA;
+  --text-color-primary: #F4F4F5;
+
+  /* fontfamily */
+  --font-family-sans: "Inter", system-ui, sans-seriif;
+  --font-weight-base: 400;
+  --font-weight-md: 500;
+  --font-weight-bold: 800;
+
+  --font-size-small: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-large: 1.25rem;
+  --font-size-xl: 1.5rem;
+  --font-size-2xl: 2.5rem;
+}
+
+html {
+  font-family: var(--font-family-sans);
+  font-weight: var(--font-weight-base);
+  font-size: var(--font-size-base);
+  line-height: 1.6;
+  color: var(--text-color-primary)
+}
+
+body {
+  background-color: var(--background-color);
+}
+
+h1, h2, h3 {
+  line-height: 1.2;
+  color: var(--text-color-primary);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: -0.04em;
+}
+
+h1 {
+  font-size: var(--font-size-2xl);
+}
+
+h2 {
+  font-size: var(--font-size-xl);
+}
+
+h3 {
+    font-size: var(--font-size-large);
+}
+
+a { 
+  text-decoration: none;
+  color: inherit; 
+  /* css reset para os links - aqui está para herdar do pai */
+}
+
+ul[role="list"] {  /* o role list é um atributo de acessibilidade */
+  list-style: none; 
+
+  /* essa boa prática permite retirar a bolinha da lista, sem que os navegadores deixem de entender que ul seira uma lista */
+  /* no HTML eu sou obrigao a usar o role="list" nas tags de ul que eu desejo retirar a bolinha da lista */
+}
+
+@media (width >= 80em) {
+  :root {
+  --font-size-large: 2rem;
+  --font-size-xl: 3rem;
+  --font-size-2xl: 4rem;
+  }
+}
