@@ -22,7 +22,7 @@
 
 /* VARIÁVEIS DO CSS */
 :root{
-    /* colors */
+  /* colors */
   /* produto */
   --brand-gradient: linear-gradient(90deg, #FC4A1A, #F7B733);
   --brand-color-primary: #F7B733;
@@ -35,6 +35,7 @@
   --text-color-secondary: #A1A1AA;
   --text-color-primary: #F4F4F5;
 
+
   /* fontfamily */
   --font-family-sans: "Inter", system-ui, sans-seriif;
   --font-weight-base: 400;
@@ -46,6 +47,14 @@
   --font-size-large: 1.25rem;
   --font-size-xl: 1.5rem;
   --font-size-2xl: 2.5rem;
+
+
+  /* padding inline e block */
+  --px-lg: 1.5rem;
+  --py-base: 1rem;
+  --py-lg: 1.5rem;
+  --py-xl: 3rem;
+
 }
 
 html {
@@ -97,5 +106,11 @@ ul[role="list"] {  /* o role list é um atributo de acessibilidade */
   --font-size-large: 2rem;
   --font-size-xl: 3rem;
   --font-size-2xl: 4rem;
+
+  /* para telas grandes */
+  --px-lg: 2rem;
+  --py-base: 1.5rem;
+  --py-lg: 2.5rem;
+  --py-xl: 5rem;
   }
 }
