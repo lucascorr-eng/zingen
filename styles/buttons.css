@@ -1,0 +1,63 @@
+.btn { 
+  --btn-bg-color: var(--text-color-primary);
+  --btn-color: var(--background-color);
+
+  border: 0;
+  background-color: transparent;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content; /* se encaixar ao conteúdo */
+
+  border-radius: .5rem;
+
+  font: var(--font-weight-md) var(--font-size-base)/1.5rem var(--font-family-sans);
+
+  cursor: pointer;
+
+  background: var(--btn-bg-color);
+  color: var(--btn-color);
+}
+
+.btn:hover { 
+  --btn-bg-color: var(--brand-gradient) ;
+  --btn-color: var(--surface-color);
+}
+
+.btn-sm {
+  padding: .5rem 1rem;
+  font-size: var(--font-size-small);
+}
+
+.btn-md {
+    padding: .75rem 1.5rem;
+  font-size: var(--font-size-base);
+}
+
+.btn-lg {
+    padding: 1rem 2rem;
+  font-size: 1.25rem;
+}
+
+.btn[aria-label] { /*estilizar o texto via pseudo-elemento basenando-se no aria-label para obter um controle visaul extra*/
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    border-radius: inherit; /* herdar a borda do pai - la de cima */
+    inset: 0.09375rem;
+    background-color: var(--background-color);
+  }
+
+  &::after {
+    content: attr(aria-label);  /* puxa o valor do atributo e insere no pseudo-elemnto */
+    background: var(--btn-bg-color);
+    -webkit-background-clip: text;
+    background-clip: text; /* esses dois são necessários para  */
+    color: transparent;
+    position: relative;
+    z-index: 1;
+  }
+}

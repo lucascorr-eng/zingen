@@ -24,7 +24,7 @@
 :root{
   /* colors */
   /* produto */
-  --brand-gradient: linear-gradient(90deg, #FC4A1A, #F7B733);
+  --brand-gradient: linear-gradient(90deg, #FC4A1A 0%, #F7B733) 100%;
   --brand-color-primary: #F7B733;
   --brand-color-secondary: #FC4A1A;
 
@@ -37,7 +37,7 @@
 
 
   /* fontfamily */
-  --font-family-sans: "Inter", system-ui, sans-seriif;
+  --font-family-sans: "Inter", system-ui, sans-serif;
   --font-weight-base: 400;
   --font-weight-md: 500;
   --font-weight-bold: 800;
