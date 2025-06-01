@@ -10,8 +10,8 @@
 
 /* CSS RESET */
 * {
-  /* margin: 0;
-  padding: 0; */
+  margin: 0;
+  padding: 0;
   font: inherit; /*vai tirar todos os estilos da fonte - um css reset para fonts */
 
   -webkit-font-smoothing: antialiased;  /* suaviza as fontes, as bordas das fontes, deixa o texto menos grosso */
@@ -92,6 +92,13 @@ a {
   text-decoration: none;
   color: inherit; 
   /* css reset para os links - aqui está para herdar do pai */
+}
+
+a:hover { 
+  background: var(--brand-gradient);
+  -webkit-background-clip: text; /* medida de acessibilidade */
+  background-clip: text;  /*para que a cor seja aplicada somente ao texto */
+  color: transparent;
 }
 
 ul[role="list"] {  /* o role list é um atributo de acessibilidade */
