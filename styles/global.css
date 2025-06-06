@@ -88,13 +88,13 @@ h3 {
     font-size: var(--font-size-large);
 }
 
-a { 
+a {
   text-decoration: none;
-  color: inherit; 
+  color: inherit;
   /* css reset para os links - aqui está para herdar do pai */
 }
 
-a:hover { 
+a:hover {
   background: var(--brand-gradient);
   -webkit-background-clip: text; /* medida de acessibilidade */
   background-clip: text;  /*para que a cor seja aplicada somente ao texto */
@@ -102,7 +102,7 @@ a:hover {
 }
 
 ul[role="list"] {  /* o role list é um atributo de acessibilidade */
-  list-style: none; 
+  list-style: none;
 
   /* essa boa prática permite retirar a bolinha da lista, sem que os navegadores deixem de entender que ul seira uma lista */
   /* no HTML eu sou obrigao a usar o role="list" nas tags de ul que eu desejo retirar a bolinha da lista */
