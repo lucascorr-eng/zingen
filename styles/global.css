@@ -38,6 +38,7 @@
 
   /* fontfamily */
   --font-family-sans: "Inter", system-ui, sans-serif;
+  
   --font-weight-base: 400;
   --font-weight-md: 500;
   --font-weight-bold: 800;
