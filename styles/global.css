@@ -38,7 +38,7 @@
 
   /* fontfamily */
   --font-family-sans: "Inter", system-ui, sans-serif;
-  
+
   --font-weight-base: 400;
   --font-weight-md: 500;
   --font-weight-bold: 800;
@@ -108,6 +108,11 @@ ul[role="list"] {  /* o role list é um atributo de acessibilidade */
   /* essa boa prática permite retirar a bolinha da lista, sem que os navegadores deixem de entender que ul seira uma lista */
   /* no HTML eu sou obrigao a usar o role="list" nas tags de ul que eu desejo retirar a bolinha da lista */
 }
+
+img {
+    max-width: 100%;
+    display: inline-block;
+  } 
 
 @media (width >= 80em) {
   :root {
