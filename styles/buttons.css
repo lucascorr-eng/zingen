@@ -51,7 +51,7 @@
     content: "";
     position: absolute;
     border-radius: inherit; /* herdar a borda do pai - la de cima */
-    inset: 0.09375rem;
+    inset: 1px;
     background-color: var(--background-color);
   }
 
