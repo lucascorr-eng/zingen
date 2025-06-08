@@ -66,12 +66,14 @@ html {
   color: var(--text-color-primary);
 
   overflow-x: hidden;
-
   scroll-behavior: smooth;  /* não está funcionado */
 }
 
 body {
   background-color: var(--background-color);
+
+  overflow-x: hidden;
+  scroll-behavior: smooth;  /* não está funcionado */
 }
 
 h1, h2, h3 {
